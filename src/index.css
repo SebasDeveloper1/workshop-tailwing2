@@ -1,3 +1,20 @@
-@import 'tailwindcss/dist/base.css';
-@import 'tailwindcss/dist/components.css';
-@import 'tailwindcss/dist/utilities.css';
+@import "tailwindcss/dist/base.css";
+@import "tailwindcss/dist/components.css";
+@import "tailwindcss/dist/utilities.css";
+
+.button-img {
+  padding: 15px;
+  margin: 40px 0;
+  font-size: 1.3rem;
+}
+
+.img-container {
+  padding: 10px;
+}
+
+.image {
+  width: 320px;
+  border-radius: 10px;
+  box-shadow: 2px 5px 15px 5px hsl(240, 76%, 61%);
+  background-color: gray;
+}
