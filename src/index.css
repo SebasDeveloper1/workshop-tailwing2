@@ -3,7 +3,7 @@
 @import "tailwindcss/dist/utilities.css";
 
 .button-img {
-  padding: 15px;
+  padding: 10px;
   margin: 40px 0;
   font-size: 1.3rem;
 }
@@ -12,9 +12,16 @@
   padding: 10px;
 }
 
+.images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .image {
-  width: 320px;
+  width: 20vw;
   border-radius: 10px;
-  box-shadow: 2px 5px 15px 5px hsl(240, 76%, 61%);
-  background-color: gray;
+  box-shadow: 2px 5px 15px 5px rgb(80, 80, 231);
+  background-color: rgba(80, 80, 231, 0.521);
 }

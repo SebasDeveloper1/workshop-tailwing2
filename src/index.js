@@ -59,13 +59,13 @@ const createNode = async () => {
     containerImage.className = 'img-container';
 
     const imagen = document.createElement('img');
-    imagen.className = 'image mx-auto';
+    imagen.className = 'image mx-auto'
     imagen.dataset.src = imageUrl;
 
     containerImage.appendChild(imagen);
     images.appendChild(containerImage);
     appendedImages++;
-printLog();
+    printLog();
 
     registerImage(containerImage); // IntersectionObserver
 
@@ -75,9 +75,10 @@ printLog();
 
 const deleteNode = () => {
   const containerImage = document.querySelectorAll('.img-container');
-  console.log(containerImage);
   containerImage.forEach((image) => {
     images.removeChild(image);
+    appendedImages = 0;
+    loadedImages = 0;
   })
 }
 
